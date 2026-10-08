@@ -142,7 +142,7 @@ $header->display();
 								<?php endif; ?>
 							</div>
 
-							<?php if ( empty( $template_args['user_data'] ) || empty( $template_args['cbid'] ) && ! empty( $template_args['scan_id'] ) ) : ?>
+							<?php if ( empty( $template_args['user_data'] ) || ( empty( $template_args['cbid'] ) && ! empty( $template_args['scan_id'] ) ) ) : ?>
 								<div class="banner-preview-container">
 									<div class="divider"></div>
 									<p class="step-description">
@@ -368,7 +368,7 @@ $header->display();
 											<?php
 											checked( 1, $template_args['banner_enabled'] === '1' );
 											?>
-											 />
+											/>
 										<label for="cookiebot-banner-enabled" class="toggle-label"></label>
 									</div>
 									<div class="label-wrapper status-badge <?php echo ! empty( $template_args['cbid'] ) && $template_args['banner_enabled'] === '1' ? 'active' : ' inactive'; ?>" id="cookiebot-banner-badge">
@@ -397,7 +397,7 @@ $header->display();
 											<?php
 											checked( 1, $template_args['auto_blocking_mode'] === '1' );
 											?>
-											 />
+											/>
 										<label for="cookiebot-uc-auto-blocking-mode" class="toggle-label"></label>
 									</div>
 									<div class="label-wrapper status-badge <?php echo ! empty( $template_args['cbid'] ) && $template_args['auto_blocking_mode'] === '1' ? 'active' : ' inactive'; ?>" id="cookiebot-uc-auto-blocking-mode-badge">
@@ -428,7 +428,7 @@ $header->display();
 											<?php
 											checked( 1, $template_args['gcm_enabled'] === '1' );
 											?>
-											 />
+											/>
 										<label for="cookiebot-gcm" class="toggle-label"></label>
 									</div>
 

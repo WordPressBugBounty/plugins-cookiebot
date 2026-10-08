@@ -5,8 +5,10 @@ Plugin Name: Cookiebot by Usercentrics - Automatic Cookie Banner for GDPR/CCPA &
 Plugin URI: https://www.cookiebot.com/
 Description: Install your cookie banner in minutes. Automatically scan and block cookies to comply with the GDPR, CCPA, Google Consent Mode v2. Free plan option.
 Author: Usercentrics A/S
-Version: 4.7.3
+Version: 4.7.5
 Author URI: https://www.cookiebot.com/
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: cookiebot
 Domain Path: /langs
 */
@@ -20,6 +22,7 @@ define( 'CYBOT_COOKIEBOT_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
 require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/src/lib/helper.php';
+require_once __DIR__ . '/src/lib/global-deprecations-class.php';
 require_once __DIR__ . '/src/lib/global-deprecations.php';
 
 try {
