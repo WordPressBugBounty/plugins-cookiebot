@@ -3,7 +3,7 @@ if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
 
-// All new and legacy config params
+// All new and legacy config params (except param: 'cookiebot-uc-onboarded-via-signup')
 // phpcs:ignore
 // phpcs:ignore
 $options = array(
@@ -16,7 +16,6 @@ $options = array(
 	'cookiebot-banner-enabled',
 	'cookiebot_banner_live_dismissed',
 	'cookiebot-uc-auto-blocking-mode',
-	'cookiebot-uc-onboarded-via-signup',
 
 	'cookiebot-ruleset-id',
 	'cookiebot-language',
@@ -52,6 +51,7 @@ $options = array(
 	'cookiebot-second-banner-regions',
 	'cookiebot-second-banner-id',
 	'cookiebot-multiple-banners',
+	'cookiebot-signup-clicked',
 );
 // Delete all config params
 // phpcs:ignore

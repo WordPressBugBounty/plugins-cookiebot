@@ -29,7 +29,7 @@ class Cookiebot_WP {
 		}
 	}
 
-	const COOKIEBOT_PLUGIN_VERSION  = '4.7.5';
+	const COOKIEBOT_PLUGIN_VERSION  = '4.8.0';
 	const COOKIEBOT_MIN_PHP_VERSION = '5.6.0';
 
 	/**
@@ -104,6 +104,7 @@ class Cookiebot_WP {
 			( new Cookiebot_Notices() )->register_hooks();
 			( new Cookiebot_Review() )->register_hooks();
 			( new PPG_Page() )->register_ajax_hooks();
+			( new Dashboard_Setup_Ajax() )->register_hooks();
 		}
 
 		( new Consent_API_Helper() )->register_hooks();
